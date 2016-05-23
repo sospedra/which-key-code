@@ -8,7 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,100' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/vendor/normalize.min.css">
+        <link rel="stylesheet" href="css/vendor/bulma.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <!--[if lt IE 9]>
@@ -21,8 +24,26 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <main id="js-dots">
+          <header>
+            <a class="button is-outlined help-icon">
+              <span>?</span>
+            </a>
+          </header>
 
+          <section class="hero is-fullheight">
+            <div class="hero-body">
+              <div class="container has-text-centered">
+                <h1 id="js-key" class="title"></h1>
+                <h2 id="js-message" class="subtitle">
+                    Press any key
+                </h2>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 

@@ -55,20 +55,62 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html, body, canvas {
+  overflow: hidden;
+}
 
+body {
+  font-family: 'Lato', sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  background: hsl(140, 35%, 50%);
+}
 
+h1.title {
+  font-size: 5em;
+  color: white;
+}
 
+h2.subtitle {
+  font-size: 3em;
+  color: white;
+}
 
+canvas {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
 
+.help-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  font-weight: 900;
+  font-size: 1em;
+}
 
+.help-icon:hover {
+  color: white;
+  border-color: white;
+}
 
-
-
-
-
-
-
-
+section.hero {
+  background: -moz-radial-gradient(bottom, ellipse cover,  hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,0.35) 120%);
+  background: -webkit-radial-gradient(bottom, ellipse cover,  hsla(0,0%,0%,0) 0%,hsla(0,0%,0%,0.35) 120%);
+  background: radial-gradient(ellipse at bottom,  hsla(0,0%,0%,0) 0%,hsla(0,0%,0%,0.35) 120%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
+}
 
 /* ==========================================================================
    Media Queries
