@@ -112,6 +112,7 @@ header a.button {
     border: none;
     margin-left: 5px;
     padding: 0;
+    opacity: .55;
 }
 
 header a.button .icon, header a.button.is-rounded {
@@ -136,6 +137,8 @@ header a.button .icon.github {
 header a.button.is-rounded {
     border-radius: 50%;
     border: 3px solid white;
+    font-family: sans-serif;
+    font-size: larger;
 }
 
 header a.button:hover {
@@ -148,6 +151,19 @@ section.hero {
   background: -webkit-radial-gradient(bottom, ellipse cover,  hsla(0,0%,0%,0) 0%,hsla(0,0%,0%,0.35) 120%);
   background: radial-gradient(ellipse at bottom,  hsla(0,0%,0%,0) 0%,hsla(0,0%,0%,0.35) 120%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
+}
+
+.hero-foot {
+    opacity: .55;
+    text-align: center;
+    padding: 5% 0;
+    color: white;
+    z-index: 99;
+}
+
+.hero-foot a {
+    color: white;
+    font-weight: 900;
 }
 
 /* ==========================================================================
