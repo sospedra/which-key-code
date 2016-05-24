@@ -97,20 +97,48 @@ canvas {
   z-index: 1;
 }
 
-.help-icon {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  border-radius: 50%;
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-  font-weight: 900;
-  font-size: 1em;
-  z-index: 999;
+header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 99;
 }
 
-.help-icon:hover {
+header a.button {
+    background-color: transparent;
+    color: white;
+    font-weight: 900;
+    font-size: 1em;
+    border: none;
+    margin-left: 5px;
+    padding: 0;
+}
+
+header a.button .icon, header a.button.is-rounded {
+    width: 30px;
+    height: 30px;
+}
+
+header a.button .icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0 !important;
+}
+
+header a.button .icon.twitter {
+    background: url(../img/twitter-icon.svg);
+}
+
+header a.button .icon.github {
+    background: url(../img/github-icon.svg);
+}
+
+header a.button.is-rounded {
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+header a.button:hover {
   color: white;
   border-color: white;
 }
