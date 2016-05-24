@@ -107,6 +107,7 @@ canvas {
   border: 2px solid white;
   font-weight: 900;
   font-size: 1em;
+  z-index: 999;
 }
 
 .help-icon:hover {

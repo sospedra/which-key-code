@@ -26,7 +26,7 @@
 
         <main id="js-dots">
           <header>
-            <a class="button is-outlined help-icon">
+            <a id="js-help" class="button is-outlined help-icon">
               <span>?</span>
             </a>
           </header>
@@ -43,6 +43,27 @@
             <input id="js-input" class="visuallyhidden" type="text" />
           </section>
         </main>
+
+        <aside id="js-modal" class="modal visuallyhidden">
+          <div class="modal-background"></div>
+          <div class="modal-container">
+            <div class="modal-content">
+              <article class="message">
+                <div class="message-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque risus mi, tempus quis placerat ut, porta nec
+                  nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
+                  gravida purus diam, et dictum felis venenatis efficitur.
+                  Aenean ac eleifend lacus, in mollis lectus. Donec sodales,
+                  arcu et sollicitudin porttitor, tortor urna tempor ligula,
+                  id porttitor mi magna a neque. Donec dui urna, vehicula et
+                  sem eget, facilisis sodales sem.
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="modal-close js-modal-close"></button>
+      </aside>
 
         <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="js/plugins.js"></script>
