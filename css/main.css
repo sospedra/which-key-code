@@ -59,15 +59,24 @@ html, body, canvas {
   overflow: hidden;
 }
 
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+*:focus {
+    outline: none;
+}
+
 body {
   font-family: 'Lato', sans-serif;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   cursor: pointer;
   background: hsl(140, 35%, 50%);
+  -webkit-transition: background 1s;
+  transition: background 1s;
 }
 
 h1.title {

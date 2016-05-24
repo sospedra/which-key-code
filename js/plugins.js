@@ -26,7 +26,7 @@ particlesJS(
   "js-dots", {
   "particles": {
     "number": {
-      "value": 30
+      "value": 20
     },
     "color": {
       "value": "#eee"
@@ -42,7 +42,7 @@ particlesJS(
       }
     },
     "size": {
-      "value": 15,
+      "value": 12,
       "random": true,
       "anim": {
         "enable": false,
@@ -53,7 +53,7 @@ particlesJS(
     },
     "move": {
       "enable": true,
-      "speed": 4,
+      "speed": 3,
       "direction": "none",
       "random": true,
       "straight": false,
@@ -74,7 +74,7 @@ particlesJS(
     },
     "modes": {
       "push": {
-        "particles_nb": 10
+        "particles_nb": 3
       }
     }
   },
