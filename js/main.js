@@ -1,10 +1,4 @@
 (function () {
-    var updateKeyCode = function (code) {
-        key.innerHTML = code
-        message.innerHTML = "key code"
-        body.style.background = 'hsl(' + code * 2.6 + ', 35%, 50%)'
-    }
-
     document.addEventListener("DOMContentLoaded", function () {
       var body = document.getElementsByTagName('body')[0]
       var key = document.getElementById('js-key')
@@ -13,6 +7,11 @@
       var help = document.getElementById('js-help')
       var modal = document.getElementById('js-modal')
       var modalClose = modal.getElementsByClassName('js-modal-close')[0]
+      var updateKeyCode = function (code) {
+          key.innerHTML = code
+          message.innerHTML = "key code"
+          body.style.background = 'hsl(' + code * 2.6 + ', 35%, 50%)'
+      }
 
       window.onkeypress = function (e) { updateKeyCode(e.which) }
 
