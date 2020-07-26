@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "parcel serve src/*.html",
     "build": "rm -rf dist/* && parcel build src/*.html --public-url ./",
-    "deploy": "gh-pages -d dist",
+    "deploy:release": "gh-pages -d ist -u \"github-actions-bot <support+actions@github.com>\"",
     "test:ci": "http-server ./dist -p 1234 & cypress run",
     "test": "cypress run"
   },
