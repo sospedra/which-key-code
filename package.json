@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "parcel serve src/*.html",
     "build": "rm -rf dist/* && parcel build src/*.html --public-url ./",
-    "deploy": "gh-pages -d dist -u \"github-actions-bot <support+actions@github.com>\"",
+    "deploy:gh": "gh-pages -d dist -u \"github-actions-bot <support+actions@github.com>\"",
+    "deploy:cname": "echo 'keycodes.sospedra.me' > dist/CNAME",
+    "deploy": "yarn deploy:gh && yarn deploy:cname",
     "test:ci": "http-server ./dist -p 1234 & cypress run",
     "test": "cypress run"
   },
